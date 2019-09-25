@@ -23,14 +23,23 @@ public class MyUtils {
 		Connection conn = (Connection) request.getAttribute(ATT_NAME_CONNECTION);
 		return conn;
 	}
-
+	
 	public static void storeLoginedUser(HttpSession session, CustomerDetails loginedUser) {
-		session.setAttribute("loginedUser", loginedUser);
+		session.setAttribute("signedUpUser", loginedUser);
 	}
 
 	public static CustomerDetails getLoginedUser(HttpSession session) {
 		CustomerDetails loginedUser = (CustomerDetails) session.getAttribute("loginedUser");
 		return loginedUser;
+	}
+
+	public static void storeSignedUpUser(HttpSession session, CustomerDetails signedUpUser) {
+		session.setAttribute("signedUpUser", signedUpUser);
+	}
+
+	public static CustomerDetails getSignedUpUser(HttpSession session) {
+		CustomerDetails signedUpUser = (CustomerDetails) session.getAttribute("signedUpUser");
+		return signedUpUser;
 	}
 
 	public static void storeUserCookie(HttpServletResponse response, CustomerDetails user) {

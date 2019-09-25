@@ -1,37 +1,37 @@
 package com.onlineshopping.beans;
 
 public class CustomerDetails {
-	
-	public static final String GENDER_MALE="M";
-	public static final String GENDER_FEMALE="F";
 
-	
-	private String FirstName;
-	private String LastName;
+	public static final String GENDER_MALE = "M";
+	public static final String GENDER_FEMALE = "F";
+
+	private String firstName;
+	private String lastName;
 	private String Gender;
-	private String DateOfBirth;
+	private String dateOfBirth;
 	private String Email;
-	private String PhysicalAddress;
-	private String PostalAddress;
+	private String physicalAddress;
+	private String postalAddress;
 	private String Password;
-	
+	private String confirmPassword;
+
 	public CustomerDetails() {
 	}
 
 	public String getFirstName() {
-		return FirstName;
+		return firstName;
 	}
 
 	public void setFirstName(String firstName) {
-		FirstName = firstName;
+		this.firstName = firstName;
 	}
 
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
 
 	public void setLastName(String lastName) {
-		LastName = lastName;
+		this.lastName = lastName;
 	}
 
 	public String getGender() {
@@ -43,11 +43,11 @@ public class CustomerDetails {
 	}
 
 	public String getDateOfBirth() {
-		return DateOfBirth;
+		return dateOfBirth;
 	}
 
 	public void setDateOfBirth(String dateOfBirth) {
-		DateOfBirth = dateOfBirth;
+		this.dateOfBirth = dateOfBirth;
 	}
 
 	public String getEmail() {
@@ -59,19 +59,19 @@ public class CustomerDetails {
 	}
 
 	public String getPhysicalAddress() {
-		return PhysicalAddress;
+		return physicalAddress;
 	}
 
 	public void setPhysicalAddress(String physicalAddress) {
-		PhysicalAddress = physicalAddress;
+		this.physicalAddress = physicalAddress;
 	}
 
 	public String getPostalAddress() {
-		return PostalAddress;
+		return postalAddress;
 	}
 
 	public void setPostalAddress(String postalAddress) {
-		PostalAddress = postalAddress;
+		this.postalAddress = postalAddress;
 	}
 
 	public String getPassword() {
@@ -81,6 +81,13 @@ public class CustomerDetails {
 	public void setPassword(String password) {
 		Password = password;
 	}
-	
-	
+
+	public String getConfirmPassword() {
+		return confirmPassword;
+	}
+
+	public void setConfirmPassword(String confirmPassword) {
+		this.confirmPassword = confirmPassword;
+	}
+
 }
